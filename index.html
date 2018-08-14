@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <main>
+    <article>
+      <div class="image-container">
+        <img class="fish" src="./static/colored-fish.jpg" alt="multi-colored fish" />
+      </div>
+      <div class="image-description">
+        <div class="title">
+          <h1>Beautiful Colored Fish</h1>
+        </div>
+        <div class="description">
+          <p>Here's an amazing photograph of a beautiful fish with many vibrant colors</p>
+          <p>
+            The colors amke it like fire, perhaps signifying danger to possible predators. This kind of coloring is often thought to
+            be a form of evolutionary adaptaption.
+          </p>
+          <p>Whatever it is, it's sheer beauty cannot be overlooked.</p>
+        </div>
+        <footer class="footer">
+          <img class="photographer" src="./static/photographer.jpeg" alt="">
+          <p>Photo Credit: <a href="https://unsplash.com/@mahuyar">&nbsp;&nbsp;Kyaw Tun
+            </a> </p>
+        </footer>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    window.onload = function () {
+      var article = document.getElementsByTagName('article')[0];
+      var main = document.getElementsByTagName('main')[0];
+      var clone;
+      for (var i = 0; i < 9; i++) {
+        clone = article.cloneNode(true);
+        console.log(clone);
+        main.appendChild(clone);
+      }
+    };
+  </script>
+
+</body>
+
+</html>
