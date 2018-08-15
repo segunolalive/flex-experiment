@@ -3,7 +3,9 @@
   font-family: sans-serif;
 }
 
-main, article, footer {
+main,
+article,
+footer {
   width: 100%;
 }
 
@@ -19,6 +21,17 @@ main {
   flex-wrap: wrap;
 }
 
+.width-50 {
+  width: 100%;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .width-50 {
+    width: 50%;
+  }
+}
+
 article {
   margin: 10px;
   max-height: 300px;
@@ -28,30 +41,19 @@ article {
   box-shadow: 3px 4px rgba(237, 237, 237, 0.247);
 }
 
-@media screen and (min-width: 768px) {
-  article {
-    width: 45%;
-  }
-}
-
 footer {
   align-items: center;
   margin: 10px 0;
 }
 
 footer p {
-  margin-left: 40px;
+  margin-left: 10px;
 }
 
 img {
   background: #000000;
   object-fit: cover;
   object-position: center;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
 }
 
 .image-container {
