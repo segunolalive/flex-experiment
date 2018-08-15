@@ -15,7 +15,6 @@ main {
 }
 
 article {
-  padding: 10px;
   margin: 10px;
   max-height: 300px;
   width: 100%;
@@ -52,15 +51,17 @@ img {
 .image-description {
   width: 65%;
   flex-direction: column;
-  max-height: 70%;
+  padding: 10px;
 }
 
 .description {
+  max-height: 70%;
   overflow: hidden;
 }
 
 .fish {
   width: 100%;
+  border-radius: 3px 0 0 3px;
 }
 
 .photographer {
