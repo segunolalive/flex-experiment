@@ -34,10 +34,11 @@ main {
 }
 
 article {
+  position: relative;
   margin: 10px;
   max-height: 300px;
   width: 100%;
-  border: 0.5px solid #eeeeee;
+  border: 0.5px solid rgb(238, 238, 238);
   border-radius: 3px;
   box-shadow: 3px 4px rgba(237, 237, 237, 0.247);
 }
@@ -48,22 +49,18 @@ footer {
 }
 
 footer p {
-  margin-left: 10px;
+  margin-left: 40px;
 }
 
 img {
-  background: #000000;
+  position: absolute;
+  background: rgb(0, 0, 0);
   object-fit: cover;
   object-position: center;
 }
 
-.image-container {
-  width: 35%;
-  margin-right: 10px;
-  max-width: 210px;
-}
-
 .image-description {
+  margin-left: 35%;
   width: 65%;
   flex-direction: column;
   padding: 10px;
@@ -75,7 +72,8 @@ img {
 }
 
 .fish {
-  width: 100%;
+  width: 35%;
+  height: 100%;
   border-radius: 3px 0 0 3px;
 }
 
